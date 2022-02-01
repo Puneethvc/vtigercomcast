@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [crossbrowser]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Testrunner- firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.vtiger.comcast.contact.CreateContactTestNg">
+        <methods>
+          <include name="CreatecontacwithtOrganizationTest"/>
+          <include name="configBs"/>
+          <include name="configBC"/>
+          <include name="configAM"/>
+          <include name="configBM"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+          <include name="CreatecontactTest"/>
+        </methods>
+      </class> <!-- com.vtiger.comcast.contact.CreateContactTestNg -->
+    </classes>
+  </test> <!-- Testrunner- firefox(failed) -->
+  <test thread-count="2" parallel="tests" name="Testrunner- chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.vtiger.comcast.organizationtest.CreateOrganizationTestNg">
+        <methods>
+          <include name="configBs"/>
+          <include name="configBC"/>
+          <include name="configAM"/>
+          <include name="configBM"/>
+          <include name="CreateOrganizationTest"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+          <include name="CreateorganizationindustryTest"/>
+        </methods>
+      </class> <!-- com.vtiger.comcast.organizationtest.CreateOrganizationTestNg -->
+    </classes>
+  </test> <!-- Testrunner- chrome(failed) -->
+</suite> <!-- Failed suite [crossbrowser] -->
